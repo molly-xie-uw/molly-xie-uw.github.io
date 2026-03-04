@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Molly Xie</title>
+  <meta name="description" content="Molly Xie — UW Honours Math (Co-op). Interested in Software & Data internships." />
+  <style>
+    :root { --fg:#111; --muted:#555; --line:#e8e8e8; --bg:#fff; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+    .wrap { max-width:900px; margin:0 auto; padding:48px 20px; }
+    header { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:12px; }
+    h1 { margin:0; font-size:34px; letter-spacing:-0.02em; }
+    .tagline { margin:8px 0 0; color:var(--muted); }
+    nav a { margin-right:14px; color:var(--fg); text-decoration:none; border-bottom:1px solid transparent; }
+    nav a:hover { border-bottom-color:var(--fg); }
+    section { margin-top:28px; padding-top:22px; border-top:1px solid var(--line); }
+    h2 { margin:0 0 10px; font-size:18px; text-transform:uppercase; letter-spacing:0.08em; }
+    .card { padding:14px 14px; border:1px solid var(--line); border-radius:12px; margin:12px 0; }
+    .meta { color:var(--muted); font-size:14px; }
+    ul { margin:8px 0 0 18px; }
+    .pill { display:inline-block; padding:4px 10px; border:1px solid var(--line); border-radius:999px; margin:4px 6px 0 0; font-size:13px; color:var(--muted); }
+    footer { margin-top:34px; color:var(--muted); font-size:13px; }
+    .btn { display:inline-block; padding:8px 12px; border:1px solid var(--line); border-radius:10px; text-decoration:none; color:var(--fg); }
+    .btn:hover { border-color:#bbb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Molly Xie</h1>
+        <p class="tagline">Honours Mathematics (Co-op) @ University of Waterloo • Interested in Software & Data internships</p>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <strong>SpatialVCS</strong>
+        <div class="meta">Python • FastAPI • WebSocket • YOLOv8 • LLM • Hackathon Winner</div>
+        <ul>
+          <li>“Git for Reality” prototype: physical spaces as searchable snapshots (object metadata + timestamps).</li>
+          <li>Implemented a “Physical Diff” by tracking object movement across commits.</li>
+          <li>Enabled privacy-preserving natural language queries via embeddings + metadata (no raw video storage).</li>
+        </ul>
+        <p>
+          <a class="btn" href="TODO_GITHUB_SPATIALVCS" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Optional: <a class="btn" href="TODO_DEMO_LINK" target="_blank" rel="noreferrer">Demo</a> -->
+        </p>
+      </div>
+
+      <div class="card">
+        <strong>SleepMatch</strong>
+        <div class="meta">Python • Data Analysis • Streamlit</div>
+        <ul>
+          <li>Built a structured pipeline to analyze sleep patterns and daily habits; generated interpretable summaries.</li>
+          <li>Used statistical reasoning to explore relationships between sleep quality and lifestyle variables.</li>
+          <li>Wrote modular, reproducible Python code with clear documentation and Git workflow.</li>
+        </ul>
+        <p>
+          <a class="btn" href="TODO_GITHUB_SLEEPMATCH" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Optional: <a class="btn" href="TODO_STREAMLIT_DEMO" target="_blank" rel="noreferrer">Live Demo</a> -->
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div>
+        <span class="pill">Python</span>
+        <span class="pill">C</span>
+        <span class="pill">Git</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">Linux</span>
+        <span class="pill">Streamlit</span>
+        <span class="pill">EDA</span>
+        <span class="pill">Statistical Reasoning</span>
+      </div>
+      <p class="meta" style="margin-top:10px;">
+        Coursework: CS 135/136 (FP, Algorithms & Data Abstraction), MATH 135/136, MATH 137/138
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
+      </p>
+      <p class="meta">Tip: upload your resume file into this repo and name it <code>resume.pdf</code>.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:z95xie@uwaterloo.ca">z95xie@uwaterloo.ca</a><br/>
+        GitHub: <a href="https://github.com/molly-xie-uw" target="_blank" rel="noreferrer">github.com/molly-xie-uw</a><br/>
+        LinkedIn: <a href="TODO_LINKEDIN" target="_blank" rel="noreferrer">linkedin.com/in/molly-xie-uw</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Molly Xie
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
